@@ -7,21 +7,21 @@ namespace Viktorina
         static void Main(string[] args)
         {
 
-            Topics topics = new Topics();
-            Questions questions = new Questions();
-            Variants answers = new Variants();
-            Methods methods = new Methods();
+            Topics topics = new Topics(); // mavzular
+            Questions questions = new Questions(); // savollar
+            Variants variants = new Variants(); // variantlar
+            Methods methods = new Methods(); // methodlar, qaytarilgan methodlarni alohida bitta classga joyladim, nomini nima deb nomlashni bilmasdan 'Methods' deb qo'ya qoldim.
+            Answers answers = new Answers(); // javoblar
 
-            string userAnswer = "";
+            string userAnswer = ""; // foydalanuvchi kiritadigan javob
 
-            string[] answerDataTypes = {"a", "c"};  
-            string[] answerArray = {"a", "b"};
+            
 
             Console.WriteLine("Assalomu alaykum, kerakli mavzuni tanlang");
 
-            topics.showTopics();
+            topics.showTopics(); // mavzularni ko'rsatish
 
-            int topicChoose = Convert.ToInt32(Console.ReadLine());
+            int topicChoose = Convert.ToInt32(Console.ReadLine()); 
 
             switch (topicChoose)
             {
@@ -29,17 +29,17 @@ namespace Viktorina
                     Console.WriteLine("Data types mavzusini tanladingiz!");
                     for (int i = 0; i < 2; i++)
                     {
-                        Console.WriteLine($"{i + 1}-savol;\n{questions.questionsDataTypes[i]}");
+                        Console.WriteLine($"{i + 1}-savol;\n{questions.questionsDataTypes[i]}"); // i-savol chiqadi
                         for (int j = i; j < i + 1; j++)
                         {
                             for (int k = 0; k < 3; k++)
                             {
-                                Console.WriteLine(answers.optionDataTypes[j,k]);
+                                Console.WriteLine(variants.optionDataTypes[j,k]); // i-savol variantlari chiqadi
                             }
                             Console.Write("Javob: ");
-                            userAnswer = Console.ReadLine();
+                            userAnswer = Console.ReadLine(); //
                             
-                            methods.Check(answerDataTypes, userAnswer, j); // check method
+                            methods.Check(answers.answerDataTypes, userAnswer, j); // check method, berilgan javob tekshirilayapti
 
                         }
                     }
@@ -48,30 +48,23 @@ namespace Viktorina
                     Console.WriteLine("Array mavzusini tanladingiz!");
                     for (int i = 0; i < 2; i++)
                     {
-                        Console.WriteLine($"{i + 1}-savol;\n{questions.questionsArray[i]}");
-                        for (int j = i; j < i + 1; j++)
+                        Console.WriteLine($"{i + 1}-savol;\n{questions.questionsArray[i]}"); // i-savol chiqadi
+                        for (int j = i; j < i + 1; j++) 
                         {
                             for (int k = 0; k < 3; k++)
                             {
-                                Console.WriteLine(answers.optionArray[j, k]);
+                                Console.WriteLine(variants.optionArray[j, k]);
                             }
                             Console.Write("Javob: ");
                             userAnswer = Console.ReadLine();
                            
-                            methods.Check(answerArray, userAnswer, j); // check method
-
-
+                            methods.Check(answers.answerArray, userAnswer, j); // check method, berilgan javob tekshirilayapti
                         }
                     }
                     break;
-
                 default:
                     break;
             }
-
-
-
-
         }
     }
 }
