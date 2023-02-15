@@ -13,3 +13,6 @@ D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\refint\Viktorina.dll
 D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\Viktorina.pdb
 D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\Viktorina.genruntimeconfig.cache
 D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\ref\Viktorina.dll
+D:\MyC#\ViktorinaSLN\Viktorina\bin\Debug\net7.0\Classes.dll
+D:\MyC#\ViktorinaSLN\Viktorina\bin\Debug\net7.0\Classes.pdb
+D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\Viktorina.csproj.CopyComplete

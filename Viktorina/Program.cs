@@ -1,18 +1,22 @@
-﻿namespace Viktorina
+﻿using Classes;
+
+namespace Viktorina
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            string[] topics = {"Array", "Data types"};
+
+            Topics topics = new Topics();
 
             string userAnswer = "";
 
-            string[] answerDataTypes = {"a", "c"}; // 
+            string[] answerDataTypes = {"a", "c"};  
             string[] answerArray = {"a", "b"};
 
             Console.WriteLine("Assalomu alaykum, kerakli mavzuni tanlang");
-            Console.WriteLine("1.Data types\n2.Array");
+
+            topics.showTopics();
 
             int topicChoose = Convert.ToInt32(Console.ReadLine());
 
@@ -21,6 +25,7 @@
                 "Tiplarning maximum qiymati qanday ko'riladi?" };
 
             Console.WriteLine($"uzunlik : {questionsDataTypes[1]} ");
+
             string[] questionsArray = {
                 "Array nima?",
                 "Array indeksi nechchidan boshlanadi?" };
@@ -57,10 +62,12 @@
                             if (answerDataTypes[j] == userAnswer)
                             {
                                 Console.WriteLine("To'gri javob, tabriklaymiz!");
+                                Console.WriteLine();
                             }
                             else
                             {
                                 Console.WriteLine("Xato javob, afus!");
+                                Console.WriteLine();
                             }
 
                         }
@@ -82,10 +89,12 @@
                             if (answerArray[j] == userAnswer)
                             {
                                 Console.WriteLine("To'gri javob, tabriklaymiz!");
+                                Console.WriteLine();
                             }
                             else
                             {
                                 Console.WriteLine("Xato javob, afus!");
+                                Console.WriteLine();
                             }
 
                         }
