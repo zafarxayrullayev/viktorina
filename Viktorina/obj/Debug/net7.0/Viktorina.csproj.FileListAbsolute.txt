@@ -1,0 +1,15 @@
+D:\MyC#\ViktorinaSLN\Viktorina\bin\Debug\net7.0\Viktorina.exe
+D:\MyC#\ViktorinaSLN\Viktorina\bin\Debug\net7.0\Viktorina.deps.json
+D:\MyC#\ViktorinaSLN\Viktorina\bin\Debug\net7.0\Viktorina.runtimeconfig.json
+D:\MyC#\ViktorinaSLN\Viktorina\bin\Debug\net7.0\Viktorina.dll
+D:\MyC#\ViktorinaSLN\Viktorina\bin\Debug\net7.0\Viktorina.pdb
+D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\Viktorina.csproj.AssemblyReference.cache
+D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\Viktorina.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\Viktorina.AssemblyInfoInputs.cache
+D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\Viktorina.AssemblyInfo.cs
+D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\Viktorina.csproj.CoreCompileInputs.cache
+D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\Viktorina.dll
+D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\refint\Viktorina.dll
+D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\Viktorina.pdb
+D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\Viktorina.genruntimeconfig.cache
+D:\MyC#\ViktorinaSLN\Viktorina\obj\Debug\net7.0\ref\Viktorina.dll
