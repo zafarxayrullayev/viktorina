@@ -8,6 +8,7 @@ namespace Viktorina
         {
 
             Topics topics = new Topics();
+            Questions questions = new Questions();
 
             string userAnswer = "";
 
@@ -20,15 +21,7 @@ namespace Viktorina
 
             int topicChoose = Convert.ToInt32(Console.ReadLine());
 
-            string[] questionsDataTypes = {
-                "Tiplarning minimum qiymati qanday ko'riladi?",
-                "Tiplarning maximum qiymati qanday ko'riladi?" };
-
-            Console.WriteLine($"uzunlik : {questionsDataTypes[1]} ");
-
-            string[] questionsArray = {
-                "Array nima?",
-                "Array indeksi nechchidan boshlanadi?" };
+            
 
             string[,] optionDataTypes = { 
                 { "a) <dataType>.MinValue", "b) .MinValue", "c).MaxValue" }, 
@@ -50,7 +43,7 @@ namespace Viktorina
                     Console.WriteLine("Data types mavzusini tanladingiz!");
                     for (int i = 0; i < 2; i++)
                     {
-                        Console.WriteLine($"{i + 1}-savol;\n{questionsDataTypes[i]}");
+                        Console.WriteLine($"{i + 1}-savol;\n{questions.questionsDataTypes[i]}");
                         for (int j = i; j < i + 1; j++)
                         {
                             for (int k = 0; k < 3; k++)
@@ -77,7 +70,7 @@ namespace Viktorina
                     Console.WriteLine("Array mavzusini tanladingiz!");
                     for (int i = 0; i < 2; i++)
                     {
-                        Console.WriteLine($"{i + 1}-savol;\n{questionsArray[i]}");
+                        Console.WriteLine($"{i + 1}-savol;\n{questions.questionsArray[i]}");
                         for (int j = i; j < i + 1; j++)
                         {
                             for (int k = 0; k < 3; k++)
