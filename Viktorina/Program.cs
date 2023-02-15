@@ -9,7 +9,7 @@ namespace Viktorina
 
             Topics topics = new Topics();
             Questions questions = new Questions();
-            Answers answers = new Answers();
+            Variants answers = new Variants();
             Methods methods = new Methods();
 
             string userAnswer = "";
@@ -38,7 +38,8 @@ namespace Viktorina
                             }
                             Console.Write("Javob: ");
                             userAnswer = Console.ReadLine();
-                            methods.Check(answerArray, userAnswer, j);
+                            
+                            methods.Check(answerDataTypes, userAnswer, j); // check method
 
                         }
                     }
@@ -56,16 +57,9 @@ namespace Viktorina
                             }
                             Console.Write("Javob: ");
                             userAnswer = Console.ReadLine();
-                            if (answerArray[j] == userAnswer)
-                            {
-                                Console.WriteLine("To'gri javob, tabriklaymiz!");
-                                Console.WriteLine();
-                            }
-                            else
-                            {
-                                Console.WriteLine("Xato javob, afus!");
-                                Console.WriteLine();
-                            }
+                           
+                            methods.Check(answerArray, userAnswer, j); // check method
+
 
                         }
                     }

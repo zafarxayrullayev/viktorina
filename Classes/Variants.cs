@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-    public class Answers
+    public class Variants
     {
         public string[,] optionDataTypes = {
             { 

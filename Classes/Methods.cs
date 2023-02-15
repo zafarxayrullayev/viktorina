@@ -8,9 +8,9 @@ namespace Classes
 {
     public class Methods
     {
-        public void Check(string[] answerArray, string userAnswer, int j)
+        public void Check(string[] answer, string userAnswer, int j)
         {
-            if (answerArray[j] == userAnswer)
+            if (answer[j] == userAnswer)
             {
                 Console.WriteLine("To'gri javob, tabriklaymiz!");
                 Console.WriteLine();

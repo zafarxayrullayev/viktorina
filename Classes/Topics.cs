@@ -2,7 +2,7 @@
 {
     public class Topics
     {
-        public string[] topics = { "Array", "Data types" };
+        public string[] topics = { "Data types", "Array" };
 
         public void showTopics()
         {
