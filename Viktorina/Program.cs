@@ -9,6 +9,8 @@ namespace Viktorina
 
             Topics topics = new Topics();
             Questions questions = new Questions();
+            Answers answers = new Answers();
+            Methods methods = new Methods();
 
             string userAnswer = "";
 
@@ -21,22 +23,6 @@ namespace Viktorina
 
             int topicChoose = Convert.ToInt32(Console.ReadLine());
 
-            
-
-            string[,] optionDataTypes = { 
-                { "a) <dataType>.MinValue", "b) .MinValue", "c).MaxValue" }, 
-                { "a) <dataType>.MinValue", "b) .MinValue", "c) <dataType>.MaxValue" } 
-            };
-
-            string[,] optionArray = { 
-                {   
-                    "a) Bir xil tipdagi elementlar to'plami", 
-                    "b) string tipidagi elementlar to'plami", 
-                    "c) Elementlar to'plami" 
-                },
-                {   "a) 1 dan", "b) 0 dan", "c) -1 dan" } };
-
-            
             switch (topicChoose)
             {
                 case 1:
@@ -48,20 +34,11 @@ namespace Viktorina
                         {
                             for (int k = 0; k < 3; k++)
                             {
-                                Console.WriteLine(optionDataTypes[j,k]);
+                                Console.WriteLine(answers.optionDataTypes[j,k]);
                             }
                             Console.Write("Javob: ");
                             userAnswer = Console.ReadLine();
-                            if (answerDataTypes[j] == userAnswer)
-                            {
-                                Console.WriteLine("To'gri javob, tabriklaymiz!");
-                                Console.WriteLine();
-                            }
-                            else
-                            {
-                                Console.WriteLine("Xato javob, afus!");
-                                Console.WriteLine();
-                            }
+                            methods.Check(answerArray, userAnswer, j);
 
                         }
                     }
@@ -75,7 +52,7 @@ namespace Viktorina
                         {
                             for (int k = 0; k < 3; k++)
                             {
-                                Console.WriteLine(optionArray[j, k]);
+                                Console.WriteLine(answers.optionArray[j, k]);
                             }
                             Console.Write("Javob: ");
                             userAnswer = Console.ReadLine();
