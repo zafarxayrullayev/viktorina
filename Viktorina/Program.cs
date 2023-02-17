@@ -39,10 +39,11 @@ namespace Viktorina
                             Console.Write("Javob: ");
                             userAnswer = Console.ReadLine(); //
                             
-                            methods.Check(answers.answerDataTypes, userAnswer, j); // check method, berilgan javob tekshirilayapti
+                            methods.CheckAndCount(answers.answerDataTypes, userAnswer, j); // check method, berilgan javob tekshirilayapti
 
                         }
                     }
+                    Console.WriteLine($"{methods.Count} ta savolga to'g'ri javob berdingiz!");
                     break;
                 case 2:
                     Console.WriteLine("Array mavzusini tanladingiz!");
@@ -58,9 +59,10 @@ namespace Viktorina
                             Console.Write("Javob: ");
                             userAnswer = Console.ReadLine();
                            
-                            methods.Check(answers.answerArray, userAnswer, j); // check method, berilgan javob tekshirilayapti
+                            methods.CheckAndCount(answers.answerArray, userAnswer, j); // check method, berilgan javob tekshirilayapti
                         }
                     }
+                    Console.WriteLine($"{methods.Count} ta savolga to'g'ri javob berdingiz!");
                     break;
                 default:
                     break;

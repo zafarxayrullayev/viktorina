@@ -8,11 +8,13 @@ namespace Classes
 {
     public class Methods
     {
-        public void Check(string[] answer, string userAnswer, int j)
+        public int Count { get; set; }
+        public void CheckAndCount(string[] answer, string userAnswer, int j)
         {
             if (answer[j] == userAnswer)
             {
                 Console.WriteLine("To'gri javob, tabriklaymiz!");
+                Count++;
                 Console.WriteLine();
             }
             else
