@@ -17,7 +17,7 @@ namespace Viktorina
 
             
 
-            Console.WriteLine("Assalomu alaykum, kerakli mavzuni tanlang");
+            Console.WriteLine("Assalomu alaykum, kerakli mavzuni tanlang\nKichik eslatma!! Javoblar uchun 'a', 'b', 'c' belgilarni kiriting.");
 
             topics.showTopics(); // mavzularni ko'rsatish
 
@@ -36,9 +36,15 @@ namespace Viktorina
                             {
                                 Console.WriteLine(variants.optionDataTypes[j,k]); // i-savol variantlari chiqadi
                             }
+                            abs:
                             Console.Write("Javob: ");
                             userAnswer = Console.ReadLine(); //
-                            
+
+                            if (userAnswer != "a" && userAnswer != "b" && userAnswer != "c")
+                            {
+                                Console.WriteLine($"Siz 'a', 'b', 'c' belgilarni kiritmadingiz! Qayta kiritishingizni so'raymiz");
+                                goto abs;
+                            }
                             methods.CheckAndCount(answers.answerDataTypes, userAnswer, j); // check method, berilgan javob tekshirilayapti
 
                         }
