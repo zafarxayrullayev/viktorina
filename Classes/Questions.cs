@@ -10,11 +10,13 @@ namespace Classes
     {
         public string[] questionsDataTypes = {
                 "Tiplarning minimum qiymati qanday ko'riladi?",
-                "Tiplarning maximum qiymati qanday ko'riladi?" };
+                "Tiplarning maximum qiymati qanday ko'riladi?" 
+        };
 
 
         public string[] questionsArray = {
                 "Array nima?",
-                "Array indeksi nechchidan boshlanadi?" };
+                "Array indeksi nechchidan boshlanadi?" 
+        };
     }
 }

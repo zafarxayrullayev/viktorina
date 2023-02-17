@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-    internal class Answers
+    public class Answers
     {
+        public string[] answerDataTypes = { "a", "c" };
+        public string[] answerArray = { "a", "b" };
     }
 }
